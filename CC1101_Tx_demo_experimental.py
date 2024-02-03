@@ -155,6 +155,18 @@ def strobe(address):
     cs.value(1)
     return databuffer
 
+def setFrequency(frequency, offset):
+    frequency_hex = hex(int(frequency * (pow(2,16) / 26000000)+offset))
+
+    byte2 = (int(frequency_hex, 16) >> 16) & 0xff;
+    byte1 = (int(frequency_hex) >>  8) & 0xff;
+    byte0 = int(frequency_hex) & 0xff;
+
+    writeSingleByte(FREQ2, byte2)
+    writeSingleByte(FREQ1, byte1)
+    writeSingleByte(FREQ0, byte0)  
+
+
 strobe(SRES)
 
 writeSingleByte(IOCFG2, 0x69)    
@@ -170,9 +182,10 @@ writeSingleByte(ADDR, 0x00)
 writeSingleByte(CHANNR, 0x00)
 writeSingleByte(FSCTRL1, 0x06)   
 writeSingleByte(FSCTRL0, 0x00)   
-writeSingleByte(FREQ2, 0x10)	  #. 0x10 <- 434.4 (theory) # 0x10 <- exactly on 434.4 (measured) .#
-writeSingleByte(FREQ1, 0xB5)	  #. 0xB5 <- 434.4 (theory) # 0xB5 <- exactly on 434.4 (measured) .#
-writeSingleByte(FREQ0, 0xA9)	  #. 0x2B <- 434.4 (theory) # 0xA9 <- exactly on 434.4 (measured) .#
+#writeSingleByte(FREQ2, 0x10)	  #. 0x10 <- 434.4 (theory) # 0x10 <- exactly on 434.4 (measured) .#
+#writeSingleByte(FREQ1, 0xB5)	  #. 0xB5 <- 434.4 (theory) # 0xB5 <- exactly on 434.4 (measured) .#
+#writeSingleByte(FREQ0, 0xA9)	  #. 0x2B <- 434.4 (theory) # 0xA9 <- exactly on 434.4 (measured) .#
+setFrequency(434400000, 0)
 writeSingleByte(MDMCFG4, 0xE7)    
 writeSingleByte(MDMCFG3, 0x10)    
 writeSingleByte(MDMCFG2, 0x30)    #. 32 would be 16/16 sync word bits .#
