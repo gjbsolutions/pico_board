@@ -34,8 +34,22 @@
 
 To Rx(5) θα συνδεθεί στο GP0 pin του pico και το Tx(4) θα συνδεθεί στο pin GP1 του pico.
 
+**Παράδειγμα για λήψη gps με το module E108 της EBYTE**
+
+![Pico_Board](GPS.jpg)
+
+To Rx(5) θα συνδεθεί στο GP0 pin του pico και το Tx(4) θα συνδεθεί στο pin GP1 του pico.
+
+**Παράδειγμα κρυπτογράφησης**
+
+Συχνά υπάρχει ανάγκη κρυπτογράφησης των μυνημάτων, προστέθηκε παράδειγμα κρυπτογράφησης AES
+
+![Pico_Board](encrypt.jpg)
+
 
 **PCB board**
+
+Προστέθηκαν τα Gerber Files της πλακέτας
 
 ![Pico_Board](pico_pcb.jpg)
 
