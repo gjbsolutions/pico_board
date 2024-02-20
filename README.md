@@ -32,4 +32,11 @@
 
 ![Pico_Board](GPS.jpg)
 
-To Rx(5) θα συνδεθεί στο GP0 pin του pico και το Tx(4) θα συνδεθεί στο pin GP1 του pico. 
+To Rx(5) θα συνδεθεί στο GP0 pin του pico και το Tx(4) θα συνδεθεί στο pin GP1 του pico.
+
+**PCB board**
+
+![Pico_Board](pico_pcb.jpg)
+
+
+
