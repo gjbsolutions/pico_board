@@ -3,7 +3,7 @@ import time
 import MPU6050
 
 # Set up the I2C interface
-i2c = machine.I2C(1, sda=machine.Pin(14), scl=machine.Pin(15))
+i2c = machine.I2C(0, sda=machine.Pin(0), scl=machine.Pin(1))
 
 # Set up the MPU6050 class 
 mpu = MPU6050.MPU6050(i2c)
