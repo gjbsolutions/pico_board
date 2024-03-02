@@ -51,6 +51,10 @@ To Rx(5) θα συνδεθεί στο GP0 pin του pico και το Tx(4) θα
 
 ![Pico_Board](encrypt.jpg)
 
+**Παράδειγμα accelerometer MPU6050**
+
+![Pico_Board](mpu6050.jpg)
+
 
 **PCB board**
 
