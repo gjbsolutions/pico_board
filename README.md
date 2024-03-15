@@ -24,6 +24,10 @@
 
 ![cc1101](pico_board_nrf24.jpg)
 
+**Παράδειγμα Frequency Hopping με NRF24**
+
+Τα demo_RXFH_nrf24.py και demo_ΤXFH_nrf24.py δείχνουν πως μπορεί να γίνει επικοινωνία με αναπήδηση συχνότητας μεταξύ NRF24
+
 **Παράδειγμα Μετάδοσης - Λήψης με HC-12**
 
 ![Pico_Board](HC12.jpg)
