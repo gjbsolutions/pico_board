@@ -10,11 +10,7 @@
 
 Το κύκλωμα τροφοδοσίας που αποτελείται από μια μπαταρία 18650 και ένα κύκλωμα φόρτισης τέτοιας μπαταρίας 3.7V από το aliexpress
 
-![Pico_Board](pico_board_back.jpg)
-
-Η μπροστινή όψη του project με συνδεδεμένο ένα RF module επικοινωνίας CC1101 στην SPI θύρα του pico
-
-![Pico_Board](pico_board_front.jpg)
+![Pico_Board](pico_board_photo.jpg)
 
 **Παράδειγμα Μετάδοσης - Λήψης με CC1101**
 
