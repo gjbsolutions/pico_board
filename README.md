@@ -76,5 +76,9 @@ To Rx(5) θα συνδεθεί στο GP0 pin του pico και το Tx(4) θα
 
 ![Pico_Board](pico_pcb.jpg)
 
+**RC Robot**
 
+Προστέθηκαν κώδικας με απλό demo για RC Robot και controller με το app bluetooth terminal στο play store
+
+![Pico_Board](RC_Robot.jpg)
 
